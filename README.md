@@ -1,4 +1,4 @@
-# entity
+# Entity
 날짜(DT), 장소(LC), 사람(PS), 기관(OG) 시간(TI)
 
 
@@ -7,7 +7,7 @@
 
 # 구축과정  
 
- 1. 한글형태소 사전 NIADic에 사람과 장소 등의 정보을 참조했음      
+ 1. 한글형태소 사전 NIADic에 사람과 장소 등의 정보를 참조했음      
 https://kbig.kr/portal/kbig/knowledge/files/bigdata_report.page?bltnNo=10000000016451
 
 2. 세종 2007과 공개 말뭉치를 파싱해서 2차 사전 구축              
