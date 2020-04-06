@@ -28,11 +28,18 @@ https://github.com/kmounlp/NER 등의 정보를 추가 보강하면 좀 더 완�
 또한 병원 차트, 법원 녹취록 등은 특정한 목적을 위해 데이터를 별도로 구축하기 때문에 댜수의 전문 용어들이 특정한 의미로 쓰이게 된다. 아스피린과 같이 일반적으로 많이 쓰이는 용어도 있지만 대체로는 특정한 용어들을 개체로 태깅해 주는 것이 데이터 구축시 주요 작업이 것이다. 이 때 결과물은 사전이나 태깅된 문서가 된다.               
 
 ## 역사
-1995년 는 년1995 , MUC-6(the Sixth Message Understanding Conference)
-(https://cs.nyu.edu/faculty/grishman/muc6.html) 에서 시작되었는데 당시 분류의 기준은 5 가지 개체명 즉, 인명(PS), 기관명(OG), 장소(LC), 날짜(DT), 시간(TI) 에 BIO tag 를 붙이는 과제였다. 이후 CoNLL(2003) shared task와 국내에서는 2016년과 2017년 국어정보처리 시스템 경진대회에서도 개체명 인식이 저정 분야였다. (https://ithub.korean.go.kr/user/contest/contestIntroView.do)  
+1. 1995년 는 년1995 , MUC-6(the Sixth Message Understanding Conference)
+(https://cs.nyu.edu/faculty/grishman/muc6.html) 에서 시작되었는데 당시 분류의 기준은 5 가지 개체명 즉, 인명(PS), 기관명(OG), 장소(LC), 날짜(DT), 시간(TI) 에 BIO tag 를 붙이는 과제였다.                  
+
+2. 이후 CoNLL(2003) shared task에서 Language-Independent Named Entity Recognition 과제가 이루어졌다.       
+
+3. 국내에서는 2016년과 2017년 국어정보처리 시스템 경진대회에서도 개체명 인식이 저정 분야였다. (https://ithub.korean.go.kr/user/contest/contestIntroView.do)     
+
+4. Naver NLP Challenge 2018에서도 개채명 인식이 주요 과제중 하나였고 1위를 한 State_Of_The_Art팀은 F1 score가	90.4219로 성능 개선을 보였다.
+(http://air.changwon.ac.kr/?page_id=10)          
 
 
-## 성능 
+## 영어 NER 성능 
 영어를 위한 최신 NER 시스템은 인간에 근접한 성능을 낸다. 이를테면 MUC-7에 진입한 최고의 시스템은 F-measure 기준 93.39%을 받았으며 인간 주석자는 97.60%과 96.95%점을 받았다(https://ko.wikipedia.org/wiki/%EA%B0%9C%EC%B2%B4%EB%AA%85_%EC%9D%B8%EC%8B%9D)
 
 
