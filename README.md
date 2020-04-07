@@ -50,7 +50,7 @@ https://github.com/kmounlp/NER 등의 정보를 추가 보강하면 좀 더 완�
 * 형태소 태깅 nltk.pos_tag
 * 개체명 인식 nltk.chunk.ne_chunk
 
- (https://github.com/babelPish/babelLang/blob/master/ner/NER.ipynb)
+ (https://towardsdatascience.com/named-entity-recognition-with-nltk-and-spacy-8c4a7d88e7da)
 
 
 
