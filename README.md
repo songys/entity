@@ -1,24 +1,6 @@
 # Entity
-# 구축과정  
-
- 1. 한글형태소 사전 NIADic에 사람과 장소 등의 정보를 참조했음      
-https://kbig.kr/portal/kbig/knowledge/files/bigdata_report.page?bltnNo=10000000016451
-
-2. 세종 2007과 공개 말뭉치를 파싱해서 2차 사전 구축              
-
-3. 1과 2를 수작업으로 검수하여 최종 사전 구축         
-
-https://github.com/kmounlp/NER 등의 정보를 추가 보강하면 좀 더 완결된 사전이 가능할 것으로 여겨짐
-
-
-
-# 저작권 표기 
-
-크리에이티브 커먼즈 저작자표시-  동일조건변경허락 2.0 국제 라이선스(CC BY-SA)​
-(https://creativecommons.org/licenses/by-sa/3.0/deed.ko)
 
 -----------------------------------------------------------------------------------
-참고
 
 ## 개체명 인식 정의
 개체명 인식(Named Entity Recognition, 이하 NER)은 자연어처리의 하위 분야로  특정한 이름들에  태깅 값을 주어 그 정보를 가시화하는 작업이다. 개체명 인식이 어려운 이유는 새로운 개체명이 계속 만들어지고 있어서 완성된 사전을 가지기 어렵기 때문이다. 또한  같은 단어라도 사용되는 상황에 따라 다른 의미로 해석되는 중의성이 발생할 수 있다.                     
@@ -51,6 +33,28 @@ https://github.com/kmounlp/NER 등의 정보를 추가 보강하면 좀 더 완�
 * 개체명 인식 nltk.chunk.ne_chunk
 
  (https://towardsdatascience.com/named-entity-recognition-with-nltk-and-spacy-8c4a7d88e7da)
+ 
+ 
+ ===================================================================
+ 
+ # NER 데이터 구축과정  
+
+ 1. 한글형태소 사전 NIADic에 사람과 장소 등의 정보를 참조했음      
+https://kbig.kr/portal/kbig/knowledge/files/bigdata_report.page?bltnNo=10000000016451
+
+2. 세종 2007과 공개 말뭉치를 파싱해서 2차 사전 구축              
+
+3. 1과 2를 수작업으로 검수하여 최종 사전 구축         
+
+https://github.com/kmounlp/NER 등의 정보를 추가 보강하면 좀 더 완결된 사전이 가능할 것으로 여겨짐
+
+
+
+# 저작권 표기 
+
+크리에이티브 커먼즈 저작자표시-  동일조건변경허락 2.0 국제 라이선스(CC BY-SA)​
+(https://creativecommons.org/licenses/by-sa/3.0/deed.ko)
+
 
 
 
