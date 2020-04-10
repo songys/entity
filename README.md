@@ -43,8 +43,8 @@
 ## 영어 NER 성능 
 영어를 위한 최신 NER 시스템은 인간에 근접한 성능을 낸다. 이를테면 MUC-7에 진입한 최고의 시스템은 F-measure 기준 93.39%을 받았으며 인간 주석자는 97.60%과 96.95%점을 받았다(https://ko.wikipedia.org/wiki/%EA%B0%9C%EC%B2%B4%EB%AA%85_%EC%9D%B8%EC%8B%9D)
 
-- 5개 영역에 대한 개체명 분석이고 원시 코퍼스 distribution 역시 일정했을 것으로 보임
-- 개체명의 범위를 더 넓히고 구어와 문어 등 도메인 정보가 다르면 결과는 달라질 수 있음
+- 5개 영역에 대한 개체명 분석이고 원시 코퍼스 distribution 역시 일정했을 것이다.
+- 개체명의 범위를 더 다양하고 구어와 문어 등으로 도메인 정보가 달라지면 결과값은 달라질 수 있을 것이다.        
 참고논문 [Adaptive Name Entity Recognition under Highly Unbalanced Data](https://arxiv.org/abs/2003.10296)
 
 
