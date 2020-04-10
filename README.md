@@ -16,9 +16,6 @@
 
 (예) [:octocat:](https://cs.nyu.edu/faculty/grishman/NEtask20.book_7.html#HEADING18)
 
- "Arthur Anderson Consulting"
-
-"<ENAMEX TYPE="ORGANIZATION">Arthur Anderson Consulting</ENAMEX>"
                   
 
 2. 이후 CoNLL(2002, 2003) shared task에서 Language-Independent Named Entity Recognition 과제가 이루어졌다.   
