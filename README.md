@@ -11,10 +11,7 @@
 
 ## 역사
 1. 1995년 MUC-6[the Sixth Message Understanding Conference]
-(https://cs.nyu.edu/faculty/grishman/muc6.html) 에서 시작되었는데 당시 분류의 기준은 5 가지 개체명 즉, 인명(PS), 기관명(OG), 장소(LC), 날짜(DT), 시간(TI) 분류 및 BIO(Begin, in, out) tag 를 붙이는 과제였다.     
-
-
-(예) [:octocat:](https://cs.nyu.edu/faculty/grishman/NEtask20.book_7.html#HEADING18)
+(https://cs.nyu.edu/faculty/grishman/muc6.html) 에서 시작되었는데 당시 분류의 기준은 5 가지 개체명 즉, 인명(PS), 기관명(OG), 장소(LC), 날짜(DT), 시간(TI) 분류 및 BIO(Begin, in, out) tag 를 붙이는 과제였다.     [:octocat:](https://cs.nyu.edu/faculty/grishman/NEtask20.book_7.html#HEADING18)
 
                   
 
@@ -33,13 +30,12 @@
   ****`TOOLKIT`**** [Stanford Named Entity Recognizer](https://nlp.stanford.edu/software/CRF-NER.shtml)
 
   ****`TOOLKIT`****
-  영어의 경우 nltk 패키지를 통해 다음의 4단계를 거치면 입력 문장에서 사람, 조직, 장소 이름을 추출할 수 있다. 
+  영어의 경우 [nltk 패키지](https://towardsdatascience.com/named-entity-recognition-with-nltk-and-spacy-8c4a7d88e7da)를 통해 다음의 4단계를 거치면 입력 문장에서 사람, 조직, 장소 이름을 추출할 수 있다. 
 * 문장분리 nltk.sent_tokenize
 * 어절분리 nltk.word_tokenize
 * 형태소 태깅 nltk.pos_tag
 * 개체명 인식 nltk.chunk.ne_chunk
 
- (https://towardsdatascience.com/named-entity-recognition-with-nltk-and-spacy-8c4a7d88e7da)
  https://paperswithcode.com/task/named-entity-recognition-ner
 
          
