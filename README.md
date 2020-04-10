@@ -10,25 +10,66 @@
 또한 병원 차트, 법원 녹취록 등은 특정한 목적을 위해 데이터를 별도로 구축하기 때문에 댜수의 전문 용어들이 특정한 의미로 쓰이게 된다. 아스피린과 같이 일반적으로 많이 쓰이는 용어도 있지만 대체로는 특정한 용어들을 개체로 태깅해 주는 것이 데이터 구축시 주요 작업일 것이다. 이 때 결과물은 개체명와 범주로 이루어진 사전 또는 태깅된 문서가 된다.               
 
 ## 역사
-1. 1995년 는 년1995 , MUC-6(the Sixth Message Understanding Conference)
+1. 1995년 MUC-6(the Sixth Message Understanding Conference)
 (https://cs.nyu.edu/faculty/grishman/muc6.html) 에서 시작되었는데 당시 분류의 기준은 5 가지 개체명 즉, 인명(PS), 기관명(OG), 장소(LC), 날짜(DT), 시간(TI) 분류 및 BIO(Begin, in, out) tag 를 붙이는 과제였다.   
 
-(예)빈센트  B-PS 
-   반     I-PS  
-   고흐   I-PS 
-   는     Out 
+[예](https://cs.nyu.edu/faculty/grishman/NEtask20.book_7.html#HEADING18)
+"Arthur Anderson Consulting"
+
+<ENAMEX TYPE="ORGANIZATION">Arthur Anderson Consulting</ENAMEX>
                   
 
-2. 이후 CoNLL(2003) shared task에서 Language-Independent Named Entity Recognition 과제가 이루어졌다.       
+2. 이후 CoNLL(2003) shared task에서 Language-Independent Named Entity Recognition 과제가 이루어졌다.   
 
-3. 국내에서는 2016년과 2017년 국어정보처리 시스템 경진대회에서도 개체명 인식이 저정 분야였다. (https://ithub.korean.go.kr/user/contest/contestIntroView.do)     
+ [CoNLL-2002 NER corpus](https://github.com/teropa/nlp/tree/master/resources/corpora/conll2002): 스페인어와 독일어 대상      
+[CoNLL-2003 NER corpus](https://github.com/synalp/NER/tree/master/corpus/CoNLL-2003) : 영어 
 
-4. Naver NLP Challenge 2018에서도 개채명 인식이 주요 과제중 하나였고 1위를 한 State_Of_The_Art팀은 F1 score가	90.4219로 성능 개선을 보였다.
-(http://air.changwon.ac.kr/?page_id=10)          
+![eng_ner](./eng.png)
+
+
+3. 주요 대회
+[Named Entity Recognition in Twitter](https://noisy-text.github.io/2016/ner-shared-task.html)             
+
+[CoNLL 2002 Language-Independent Named Entity Recognition](https://www.clips.uantwerpen.be/conll2002/ner/)      
+
+[Introduction to the CoNLL-2003 Shared Task: Language-Independent Named Entity Recognition](http://aclweb.org/anthology/W03-0419)        
+
+## 기타 주요 데이터 
+ 
+NUT Named Entity Recognition in Twitter Shared task
+[:octocat:](https://github.com/aritter/twitter_nlp/tree/master/data/annotated/wnut16)
+
+  TOOLKIT
+ [Stanford Named Entity Recognizer](https://nlp.stanford.edu/software/CRF-NER.shtml)
+         
 
 
 ## 영어 NER 성능 
 영어를 위한 최신 NER 시스템은 인간에 근접한 성능을 낸다. 이를테면 MUC-7에 진입한 최고의 시스템은 F-measure 기준 93.39%을 받았으며 인간 주석자는 97.60%과 96.95%점을 받았다(https://ko.wikipedia.org/wiki/%EA%B0%9C%EC%B2%B4%EB%AA%85_%EC%9D%B8%EC%8B%9D)
+
+
+## 한국어 데이터
+
+1. 국내에서는 2016년과 2017년 국어정보처리 시스템 경진대회에서도 개체명 인식이 저정 분야였다. (https://ithub.korean.go.kr/user/contest/contestIntroView.do)     
+
+2. Naver NLP Challenge 2018에서도 개채명 인식이 주요 과제중 하나였고 1위를 한 State_Of_The_Art팀은 F1 score가	90.4219로 성능 개선을 보였다.
+(http://air.changwon.ac.kr/?page_id=10) 
+
+
+
+# 공개된 NER 말뭉치 데이터.  
+   
+1. HLCT 2016에서 제공한 데이터셋 원본의 일부 오류를 수정하고 공개한 말뭉치                    
+
+[:octocat:](https://github.com/machinereading/KoreanNERCorpus)              
+![kner2](./kner.png)
+
+2. 한국어 개체명 정의 및 표지 표준화 기술보고서와 이를 기반으로 제작된 개체명 형태소 말뭉치
+
+[:octocat:](https://github.com/kmounlp/NER) 
+ 
+![kner1](./kmounlp.png)
+
 
 
 ## 사용 
@@ -42,9 +83,23 @@
  https://paperswithcode.com/task/named-entity-recognition-ner
 
 
- ## 응용
+ ## 주 응용 분야
+ question answering, information retrieval, relation extraction
 
  ![bot](./bot.png)
+
+
+ ## 참고문헌
+
+[D. Nadeau and S. Sekine, “A survey of named entity recognition and classiﬁcation,” Lingvist. Investig., vol. 30, no. 1, pp. 3–26, 2007.](https://nlp.cs.nyu.edu/sekine/papers/li07.pdf)
+
+
+Z. Zhang, X. Han, Z. Liu, X. Jiang, M. Sun, and Q. Liu, “ERNIE: enhanced language representation with informative entities,” in ACL, 2019, pp. 1441–1451.    
+
+
+[Vikas Yadav, Steven Bethard, A Survey on Recent Advances in Named Entity Recognition from Deep Learning models, Submitted on 25 Oct 2019](https://arxiv.org/abs/1910.11470)
+
+
  
  
  ===================================================================
@@ -58,7 +113,6 @@ https://kbig.kr/portal/kbig/knowledge/files/bigdata_report.page?bltnNo=100000000
 
 3. 1과 2를 수작업으로 검수하여 최종 사전 구축         
 
-https://github.com/kmounlp/NER 등의 정보를 추가 보강하면 좀 더 완결된 사전이 가능할 것으로 여겨짐
 
 
 
@@ -66,15 +120,6 @@ https://github.com/kmounlp/NER 등의 정보를 추가 보강하면 좀 더 완�
 
 크리에이티브 커먼즈 저작자표시-  동일조건변경허락 2.0 국제 라이선스(CC BY-SA)​
 (https://creativecommons.org/licenses/by-sa/3.0/deed.ko)
-
-
-참고 
-
-
-D. Nadeau and S. Sekine, “A survey of named entity recognition and classiﬁcation,” Lingvist. Investig., vol. 30, no. 1, pp. 3–26, 2007.
-
-Z. Zhang, X. Han, Z. Liu, X. Jiang, M. Sun, and Q. Liu, “ERNIE: enhanced language representation with informative entities,” in ACL, 2019, pp. 1441–1451.
-
 
 
 
