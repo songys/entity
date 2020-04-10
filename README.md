@@ -10,54 +10,49 @@
 또한 병원 차트, 법원 녹취록 등은 특정한 목적을 위해 데이터를 별도로 구축하기 때문에 댜수의 전문 용어들이 특정한 의미로 쓰이게 된다. 아스피린과 같이 일반적으로 많이 쓰이는 용어도 있지만 대체로는 특정한 용어들을 개체로 태깅해 주는 것이 데이터 구축시 주요 작업일 것이다. 이 때 결과물은 개체명와 범주로 이루어진 사전 또는 태깅된 문서가 된다.               
 
 ## 역사
-1. 1995년 MUC-6(the Sixth Message Understanding Conference)
-(https://cs.nyu.edu/faculty/grishman/muc6.html) 에서 시작되었는데 당시 분류의 기준은 5 가지 개체명 즉, 인명(PS), 기관명(OG), 장소(LC), 날짜(DT), 시간(TI) 분류 및 BIO(Begin, in, out) tag 를 붙이는 과제였다.   
+1. 1995년 MUC-6[the Sixth Message Understanding Conference]
+(https://cs.nyu.edu/faculty/grishman/muc6.html) 에서 시작되었는데 당시 분류의 기준은 5 가지 개체명 즉, 인명(PS), 기관명(OG), 장소(LC), 날짜(DT), 시간(TI) 분류 및 BIO(Begin, in, out) tag 를 붙이는 과제였다.     
 
-[예](https://cs.nyu.edu/faculty/grishman/NEtask20.book_7.html#HEADING18)
-"Arthur Anderson Consulting"
+
+(예) [:octocat:](https://cs.nyu.edu/faculty/grishman/NEtask20.book_7.html#HEADING18)
+
+ "Arthur Anderson Consulting"
 
 <ENAMEX TYPE="ORGANIZATION">Arthur Anderson Consulting</ENAMEX>
                   
 
-2. 이후 CoNLL(2003) shared task에서 Language-Independent Named Entity Recognition 과제가 이루어졌다.   
+2. 이후 CoNLL(2002, 2003) shared task에서 Language-Independent Named Entity Recognition 과제가 이루어졌다.   
 
- [CoNLL-2002 NER corpus](https://github.com/teropa/nlp/tree/master/resources/corpora/conll2002): 스페인어와 독일어 대상      
-[CoNLL-2003 NER corpus](https://github.com/synalp/NER/tree/master/corpus/CoNLL-2003) : 영어 
+ * ****`COUPUS`**** [CoNLL-2002 NER corpus](https://github.com/teropa/nlp/tree/master/resources/corpora/conll2002): 스페인어와 독일어 NER      
 
+* ****`Quick peek`****
 ![eng_ner](./eng.png)
-
-
-3. 주요 대회
-[Named Entity Recognition in Twitter](https://noisy-text.github.io/2016/ner-shared-task.html)             
-
-[CoNLL 2002 Language-Independent Named Entity Recognition](https://www.clips.uantwerpen.be/conll2002/ner/)      
-
-[Introduction to the CoNLL-2003 Shared Task: Language-Independent Named Entity Recognition](http://aclweb.org/anthology/W03-0419)        
-
-## 기타 주요 데이터 
  
-NUT Named Entity Recognition in Twitter Shared task
-[:octocat:](https://github.com/aritter/twitter_nlp/tree/master/data/annotated/wnut16)
+  * ****`COUPUS`**** [CoNLL-2003 NER corpus](https://github.com/synalp/NER/tree/master/corpus/CoNLL-2003)   : 영어 NER 
 
-  TOOLKIT
- [Stanford Named Entity Recognizer](https://nlp.stanford.edu/software/CRF-NER.shtml)
+  * ****`COUPUS`**** [NUT Named Entity Recognition in Twitter Shared task](https://github.com/aritter/twitter_nlp/tree/master/data/annotated/wnut16)
+
+
+  * ****`TOOLKIT`**** [Stanford Named Entity Recognizer](https://nlp.stanford.edu/software/CRF-NER.shtml)
          
-
 
 ## 영어 NER 성능 
 영어를 위한 최신 NER 시스템은 인간에 근접한 성능을 낸다. 이를테면 MUC-7에 진입한 최고의 시스템은 F-measure 기준 93.39%을 받았으며 인간 주석자는 97.60%과 96.95%점을 받았다(https://ko.wikipedia.org/wiki/%EA%B0%9C%EC%B2%B4%EB%AA%85_%EC%9D%B8%EC%8B%9D)
 
+- 5개 영역에 대한 개체명 분석이고 원시 코퍼스 distribution 역시 일정했을 것으로 보임
+- 개체명의 범위를 더 넓히고 구어와 문어 등 도메인 정보가 다르면 결과는 달라질 수 있음
+참고논문 [Adaptive Name Entity Recognition under Highly Unbalanced Data](https://arxiv.org/abs/2003.10296)
+
 
 ## 한국어 데이터
 
-1. 국내에서는 2016년과 2017년 국어정보처리 시스템 경진대회에서도 개체명 인식이 저정 분야였다. (https://ithub.korean.go.kr/user/contest/contestIntroView.do)     
+1. 국내에서는 2016년과 2017년 [국어정보처리 시스템 경진대회](https://ithub.korean.go.kr/user/contest/contestIntroView.do) 에서도 개체명 인식이 지정 분야였다. 
 
-2. Naver NLP Challenge 2018에서도 개채명 인식이 주요 과제중 하나였고 1위를 한 State_Of_The_Art팀은 F1 score가	90.4219로 성능 개선을 보였다.
-(http://air.changwon.ac.kr/?page_id=10) 
+    
+2. [Naver NLP Challenge](http://air.changwon.ac.kr/?page_id=10) 2018에서도 개채명 인식이 주요 과제중 하나였고 1위를 한 State_Of_The_Art팀은 F1 score가	90.4219로 성능 개선을 보였다.
 
 
-
-# 공개된 NER 말뭉치 데이터.  
+## 공개된 NER 말뭉치 데이터.  
    
 1. HLCT 2016에서 제공한 데이터셋 원본의 일부 오류를 수정하고 공개한 말뭉치                    
 
@@ -66,7 +61,9 @@ NUT Named Entity Recognition in Twitter Shared task
 
 2. 한국어 개체명 정의 및 표지 표준화 기술보고서와 이를 기반으로 제작된 개체명 형태소 말뭉치
 
-[:octocat:](https://github.com/kmounlp/NER) 
+[:octocat:](https://github.com/kmounlp/NER)
+
+* ****`Quick peek`**** 
  
 ![kner1](./kmounlp.png)
 
@@ -86,6 +83,7 @@ NUT Named Entity Recognition in Twitter Shared task
  ## 주 응용 분야
  question answering, information retrieval, relation extraction
 
+
  ![bot](./bot.png)
 
 
@@ -104,7 +102,7 @@ Z. Zhang, X. Han, Z. Liu, X. Jiang, M. Sun, and Q. Liu, “ERNIE: enhanced langu
  
  ===================================================================
  
- # NER 데이터 구축과정  
+ # 이 Github에서의 NER 데이터 구축과정  
 
  1. 한글형태소 사전 NIADic에 사람과 장소 등의 정보를 참조했음      
 https://kbig.kr/portal/kbig/knowledge/files/bigdata_report.page?bltnNo=10000000016451
@@ -112,8 +110,6 @@ https://kbig.kr/portal/kbig/knowledge/files/bigdata_report.page?bltnNo=100000000
 2. 세종 2007과 공개 말뭉치를 파싱해서 2차 사전 구축              
 
 3. 1과 2를 수작업으로 검수하여 최종 사전 구축         
-
-
 
 
 # 저작권 표기 
