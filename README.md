@@ -23,17 +23,17 @@
 
 2. 이후 CoNLL(2002, 2003) shared task에서 Language-Independent Named Entity Recognition 과제가 이루어졌다.   
 
- * ****`COUPUS`**** [CoNLL-2002 NER corpus](https://github.com/teropa/nlp/tree/master/resources/corpora/conll2002): 스페인어와 독일어 NER      
+ ****`COUPUS`**** [CoNLL-2002 NER corpus](https://github.com/teropa/nlp/tree/master/resources/corpora/conll2002): 스페인어와 독일어 NER      
 
-* ****`Quick peek`****
-![eng_ner](./eng.png)
+****`Quick peek`****
+![eng_ner](./conll2013.png)
  
-  * ****`COUPUS`**** [CoNLL-2003 NER corpus](https://github.com/synalp/NER/tree/master/corpus/CoNLL-2003)   : 영어 NER 
+  ****`COUPUS`**** [CoNLL-2003 NER corpus](https://github.com/synalp/NER/tree/master/corpus/CoNLL-2003)   : 영어 NER 
 
-  * ****`COUPUS`**** [NUT Named Entity Recognition in Twitter Shared task](https://github.com/aritter/twitter_nlp/tree/master/data/annotated/wnut16)
+  ****`COUPUS`**** [NUT Named Entity Recognition in Twitter Shared task](https://github.com/aritter/twitter_nlp/tree/master/data/annotated/wnut16)
 
 
-  * ****`TOOLKIT`**** [Stanford Named Entity Recognizer](https://nlp.stanford.edu/software/CRF-NER.shtml)
+  ****`TOOLKIT`**** [Stanford Named Entity Recognizer](https://nlp.stanford.edu/software/CRF-NER.shtml)
          
 
 ## 영어 NER 성능 
@@ -61,11 +61,11 @@
 
 2. 한국어 개체명 정의 및 표지 표준화 기술보고서와 이를 기반으로 제작된 개체명 형태소 말뭉치
 
-[:octocat:](https://github.com/kmounlp/NER)
+[:octocat:](https://github.com/mounlp/NER)
 
-* ****`Quick peek`**** 
+****`Quick peek`**** 
  
-![kner1](./kmounlp.png)
+![kner1](./mounlp.png)
 
 
 
@@ -84,7 +84,7 @@
  question answering, information retrieval, relation extraction
 
 
- ![bot](./bot.png)
+ ![bot](./chatbot.png)
 
 
  ## 참고문헌
