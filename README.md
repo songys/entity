@@ -84,7 +84,7 @@
  question answering, information retrieval, relation extraction
 
 
- ![bot](./chatbot.png)
+ ![bot](./chat.png)
 
 
  ## 참고문헌
