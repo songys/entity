@@ -31,6 +31,17 @@
 
 
   ****`TOOLKIT`**** [Stanford Named Entity Recognizer](https://nlp.stanford.edu/software/CRF-NER.shtml)
+
+  ****`TOOLKIT`****
+  영어의 경우 nltk 패키지를 통해 다음의 4단계를 거치면 입력 문장에서 사람, 조직, 장소 이름을 추출할 수 있다. 
+* 문장분리 nltk.sent_tokenize
+* 어절분리 nltk.word_tokenize
+* 형태소 태깅 nltk.pos_tag
+* 개체명 인식 nltk.chunk.ne_chunk
+
+ (https://towardsdatascience.com/named-entity-recognition-with-nltk-and-spacy-8c4a7d88e7da)
+ https://paperswithcode.com/task/named-entity-recognition-ner
+
          
 
 ## 영어 NER 성능 
@@ -41,7 +52,7 @@
 참고논문 [Adaptive Name Entity Recognition under Highly Unbalanced Data](https://arxiv.org/abs/2003.10296)
 
 
-## 한국어 데이터
+## 국어 개체명 경진 대회
 
 1. 국내에서는 2016년과 2017년 [국어정보처리 시스템 경진대회](https://ithub.korean.go.kr/user/contest/contestIntroView.do) 에서도 개체명 인식이 지정 분야였다. 
 
@@ -49,7 +60,7 @@
 2. [Naver NLP Challenge](http://air.changwon.ac.kr/?page_id=10) 2018에서도 개채명 인식이 주요 과제중 하나였고 1위를 한 State_Of_The_Art팀은 F1 score가	90.4219로 성능 개선을 보였다.
 
 
-## 공개된 NER 말뭉치 데이터.  
+## 공개된 국어 개체명 말뭉치 데이터.  
    
 1. HLCT 2016에서 제공한 데이터셋 원본의 일부 오류를 수정하고 공개한 말뭉치                    
 
@@ -64,17 +75,9 @@
  
 ![kner1](./mounlp.png)
 
-
-
-## 사용 
-영어의 경우 nltk 패키지를 통해 다음의 4단계를 거치면 입력 문장에서 사람, 조직, 장소 이름을 추출할 수 있다. 
-* 문장분리 nltk.sent_tokenize
-* 어절분리 nltk.word_tokenize
-* 형태소 태깅 nltk.pos_tag
-* 개체명 인식 nltk.chunk.ne_chunk
-
- (https://towardsdatascience.com/named-entity-recognition-with-nltk-and-spacy-8c4a7d88e7da)
- https://paperswithcode.com/task/named-entity-recognition-ner
+ ## 한국어 개체명 말뭉치의 방향
+포멧이 사용하기 편하고 사용 예시가 분명한 단계로 진행되고 있다.
+개체명 태그의 종류가 다양해지고 다양한 도메인에서도 유연하게 작용할 수 있는 방향을 모색해 가고 있다.
 
 
  ## 주 응용 분야
@@ -95,7 +98,6 @@ Z. Zhang, X. Han, Z. Liu, X. Jiang, M. Sun, and Q. Liu, “ERNIE: enhanced langu
 [Vikas Yadav, Steven Bethard, A Survey on Recent Advances in Named Entity Recognition from Deep Learning models, Submitted on 25 Oct 2019](https://arxiv.org/abs/1910.11470)
 
 
- 
  
  ===================================================================
  
