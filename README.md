@@ -104,7 +104,7 @@ Z. Zhang, X. Han, Z. Liu, X. Jiang, M. Sun, and Q. Liu, “ERNIE: enhanced langu
  
  ===================================================================
  
- # 이 Github에서의 NER 데이터 구축과정  
+ # 이 [Github](https://github.com/songys/entity/tree/master/data)에서의 NER 데이터 구축과정  
 
  1. 한글형태소 사전 NIADic에 사람과 장소 등의 정보를 참조했음      
 https://kbig.kr/portal/kbig/knowledge/files/bigdata_report.page?bltnNo=10000000016451
