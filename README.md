@@ -117,7 +117,10 @@ https://kbig.kr/portal/kbig/knowledge/files/bigdata_report.page?bltnNo=100000000
 
 DT 272개, LG 29799개, PS 11354개, TI 48개 
 
-# 저작권 표기 
+4. 관련논문                    
+[박혜웅 송영숙(2017),음절 기반의 CNN를 이용한 개체명 인식, 한국정보과학회 발표 논문집](http://www.koreascience.or.kr/article/CFKO201712470015484.org)            
+
+# 저작권 표기       
 
 크리에이티브 커먼즈 저작자표시-  동일조건변경허락 2.0 국제 라이선스(CC BY-SA)​
 (https://creativecommons.org/licenses/by-sa/3.0/deed.ko)
