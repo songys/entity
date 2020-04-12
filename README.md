@@ -42,7 +42,7 @@
 
          
 
-## 영어 NER 시스테므성능 
+## 영어 NER 시스템 성능 
 영어를 위한 최신 NER 시스템은 인간에 근접한 성능을 낸다. 이를테면 MUC-7에 진입한 최고의 시스템은 F-measure 기준 93.39%을 받았으며 인간 주석자는 97.60%과 96.95%점을 받았다(https://ko.wikipedia.org/wiki/%EA%B0%9C%EC%B2%B4%EB%AA%85_%EC%9D%B8%EC%8B%9D)
 
 - 5개 영역에 대한 개체명 분석이고 원시 코퍼스 distribution 역시 일정했을 것이다.
@@ -60,7 +60,7 @@
 
 ## 공개된 국어 개체명 말뭉치 데이터.  
    
-1. HLCT 2016에서 제공한 데이터셋 원본의 일부 오류를 수정하고 공개한 말뭉치                    
+1. HLCT 2016에서 제공한 데이터 세트 원본의 일부 오류를 수정하고 공개한 말뭉치                    
 
 [:octocat:](https://github.com/machinereading/KoreanNERCorpus)              
 ![kner2](./kner.png)
@@ -92,7 +92,9 @@
  ![bot](./chat.png)
 
 
- ## 참고문헌
+ ## 참고        
+            
+ ### 문헌         
 
 [D. Nadeau and S. Sekine, “A survey of named entity recognition and classiﬁcation,” Lingvist. Investig., vol. 30, no. 1, pp. 3–26, 2007.](https://nlp.cs.nyu.edu/sekine/papers/li07.pdf)
 
@@ -102,6 +104,8 @@ Z. Zhang, X. Han, Z. Liu, X. Jiang, M. Sun, and Q. Liu, “ERNIE: enhanced langu
 
 [Vikas Yadav, Steven Bethard, A Survey on Recent Advances in Named Entity Recognition from Deep Learning models, Submitted on 25 Oct 2019](https://arxiv.org/abs/1910.11470)
 
+###Github          
+https://github.com/songys/nlp_tasks
 
  
  ===================================================================
