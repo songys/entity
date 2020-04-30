@@ -17,7 +17,7 @@
 
 https://movie.naver.com/movie/bi/mi/reviewread.nhn?code=161967&nid=4704433
 
-[ner_cloud](./ne.png)
+![ner_cloud](./ne.png)
 
 
 ## 역사
