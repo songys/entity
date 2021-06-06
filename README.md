@@ -3,7 +3,13 @@
 -----------------------------------------------------------------------------------
 
 ## 개체명 인식과 개체명 말뭉치 구축
-개체명 인식(Named Entity Recognition, 이하 NER)은 자연어처리의 하위 분야로  특정한 이름들에  태깅 값을 주어 그 정보를 가시화하는 작업이다. 개체명 인식을 위한 말뭉치 구축이 어려운 이유는 새로운 개체명이 계속 만들어지고 있어서 완성된 사전을 가지기 어렵기 때문이다. 또한  같은 단어라도 사용되는 상황에 따라 다른 의미로 해석되는 중의성이 발생할 수 있다.                     
+개체명 인식(Named Entity Recognition, 이하 NER)은 자연어처리의 하위 분야로  문자열에서 미리 정의된 개체명 타입에 대해 개체명의 경계를 탐지하고 해당하는 타입으로 분류하는 작업을 의미한다. 주로 상호 참조(coreference resolution), 관계 추출(relation extraction), 사전 추출, 시간 표현 등에서 유용하게 사용된다.
+
+
+한국어 개체명 데이터 구축을 위한 지침은 [TTA 표준](https://nanum.etri.re.kr/file/002.%EA%B0%9C%EC%B2%B4%EB%AA%85%EC%9D%B8%EC%8B%9D_%EA%B0%80%EC%9D%B4%EB%93%9C%EB%9D%BC%EC%9D%B8.pdf)이 일반적으로 사용되고 있으나 2020년과 2021년에 공개된 [모두의 말뭉치](https://corpus.korean.go.kr/)에서는 신문을 중심으로 하는 문어 외에도 웹 등에서 많이 사용되는 구어체 말뭉치 태깅을 위해 개체명의 타입 수가 늘어나 있는 것을 확인할 수 있다.  펭수와 같은 캐릭터, 강아지 이름 등을 태깅하기 위해 PS_CHARACTER, PS_PET  등이 추가된 것이 이러한 특징을 반영한다.              
+
+
+ 개체명 인식을 위한 말뭉치 구축이 어려운 이유는 새로운 개체명이 계속 만들어지고 있어서 완성된 사전을 가지기 어렵기 때문이다. 또한  같은 단어라도 사용되는 상황에 따라 다른 의미로 해석되는 중의성이 발생할 수 있다.                     
 
 ## Open domain 또는 Closed domain
 도메인을 구분하는 이유 역시 쉽게 중의성을 해소하기 위해서다.  가령, '여자 친구'의 '여름여름해'라는 곡이 있다면 사전적 의미로는 올바른 정보를 추출하기 어려울 수도 있다. 이를 대중가요라는 Closed domain에 가수와 곡명으로 분류하여 개체로 태깅해 주면 빠르게 정보에 접근할 수 있을 것이다.   
@@ -66,17 +72,20 @@ https://movie.naver.com/movie/bi/mi/reviewread.nhn?code=161967&nid=4704433
     
 2. [Naver NLP Challenge](http://air.changwon.ac.kr/?page_id=10) 2018에서도 개채명 인식이 주요 과제중 하나였고 1위를 한 State_Of_The_Art팀은 F1 score가	90.4219로 성능 개선을 보였다.
 
+3. 2021년 6월 한국어 이해를 위한 벤치마크 세트로 만들어진 KLUE 데이터는 KLUE-RoBERTa의 base 모델에서 Macro F1이 85.13였다.
 
-## 공개된 국어 개체명 말뭉치 데이터.  
+
+
+## 공개된 국어 개체명 말뭉치 데이터[:octocat:]  
    
 1. HLCT 2016에서 제공한 데이터 세트 원본의 일부 오류를 수정하고 공개한 말뭉치                    
 
-[:octocat:](https://github.com/machinereading/KoreanNERCorpus)              
+[KoreanNERCorpus](https://github.com/machinereading/KoreanNERCorpus)              
 ![kner2](./kner.png)
 
 2. 한국어 개체명 정의 및 표지 표준화 기술보고서와 이를 기반으로 제작된 개체명 형태소 말뭉치
 
-[:octocat:](https://github.com/mounlp/NER)
+[mounlp_NER](https://github.com/mounlp/NER)
 
 ****`Quick peek`**** 
  
