@@ -8,8 +8,15 @@
 
 한국어 개체명 데이터 구축을 위한 지침은 [TTA 표준](https://nanum.etri.re.kr/file/002.%EA%B0%9C%EC%B2%B4%EB%AA%85%EC%9D%B8%EC%8B%9D_%EA%B0%80%EC%9D%B4%EB%93%9C%EB%9D%BC%EC%9D%B8.pdf)이 일반적으로 사용되고 있으나 2020년과 2021년에 공개된 [모두의 말뭉치](https://corpus.korean.go.kr/)에서는 신문을 중심으로 하는 문어 외에도 웹 등에서 많이 사용되는 구어체 말뭉치 태깅을 위해 개체명의 타입 수가 늘어나 있는 것을 확인할 수 있다.  펭수와 같은 캐릭터, 강아지 이름 등을 태깅하기 위해 PS_CHARACTER, PS_PET  등이 추가된 것이 이러한 특징을 반영한다.              
 
+ ## :octocat:  한국어 개체명 말뭉치의 방향
+포멧이 사용하기 편하고 사용 예시가 분명한 단계로 진행되고 있다.
+개체명 태그의 종류가 다양해지고 다양한 도메인에서도 유연하게 작용할 수 있는 방향을 모색해 가고 있다.
 
- 개체명 인식을 위한 말뭉치 구축이 어려운 이유는 새로운 개체명이 계속 만들어지고 있어서 완성된 사전을 가지기 어렵기 때문이다. 또한  같은 단어라도 사용되는 상황에 따라 다른 의미로 해석되는 중의성이 발생할 수 있다.                     
+## 개체명 말뭉치 구축의 어려움
+
+ - 개체명 인식을 위한 말뭉치 구축이 어려운 이유는 새로운 개체명이 계속 만들어지고 있어서 완성된 사전을 가지기 어렵기 때문이다.   
+ - 같은 단어라도 사용되는 상황에 따라 다른 의미로 해석되는 중의성이 발생할 수 있다.   
+ - 세분류 태깅보다 대분류 태깅이, 개체명의 경계를 탐지하고 해당 타입 규정하는 것보다 스팬의 범위를 규정하는 것이 더 어려운 과제로 여겨진다. 가령  <서울 패션 위크:EV_FESTIVAL> 에서 서울은 분리해서 도시로 태깅하지 않고 패션 위크의 하위 이벤트로 판단하여 한꺼번에 태깅한다.                   
 
 ## :octocat: Open domain 또는 Closed domain
 도메인을 구분하는 이유 역시 쉽게 중의성을 해소하기 위해서다.  가령, '여자 친구'의 '여름여름해'라는 곡이 있다면 사전적 의미로는 올바른 정보를 추출하기 어려울 수도 있다. 이를 대중가요라는 Closed domain에 가수와 곡명으로 분류하여 개체로 태깅해 주면 빠르게 정보에 접근할 수 있을 것이다.   
@@ -98,9 +105,6 @@ https://movie.naver.com/movie/bi/mi/reviewread.nhn?code=161967&nid=4704433
 ![aihub](./aihub.png) 
 
 
- ##:octocat:  한국어 개체명 말뭉치의 방향
-포멧이 사용하기 편하고 사용 예시가 분명한 단계로 진행되고 있다.
-개체명 태그의 종류가 다양해지고 다양한 도메인에서도 유연하게 작용할 수 있는 방향을 모색해 가고 있다.
 
 
  ## :octocat: 주 응용 분야
@@ -128,7 +132,7 @@ https://github.com/songys/nlp_tasks
  
  ===================================================================
  
- # 이 [Github](https://github.com/songys/entity/tree/master/data)에서의 NER 데이터 구축 과정    
+ # :octocat: 이 [Github](https://github.com/songys/entity/tree/master/data)에서의 NER 데이터 구축 과정    
 
  1. 한글형태소 사전 NIADic에 사람과 장소 등의 정보를 참조했음      
 https://kbig.kr/portal/kbig/knowledge/files/bigdata_report.page?bltnNo=10000000016451
@@ -139,10 +143,10 @@ https://kbig.kr/portal/kbig/knowledge/files/bigdata_report.page?bltnNo=100000000
 
 DT 272개, LG 29799개, PS 11354개, TI 48개 
 
-4. 관련논문                    
+4.:octocat:  관련논문                    
 [박혜웅 송영숙(2017),음절 기반의 CNN를 이용한 개체명 인식, 한국정보과학회 발표 논문집](http://www.koreascience.or.kr/article/CFKO201712470015484.org)            
 
-# 저작권 표기       
+# :octocat: 저작권 표기       
 
 크리에이티브 커먼즈 저작자표시-  동일조건변경허락 2.0 국제 라이선스(CC BY-SA)​
 (https://creativecommons.org/licenses/by-sa/3.0/deed.ko)
