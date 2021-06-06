@@ -2,7 +2,7 @@
 
 -----------------------------------------------------------------------------------
 
-## 개체명 인식과 개체명 말뭉치 구축
+## :octocat: 개체명 인식과 개체명 말뭉치 구축
 개체명 인식(Named Entity Recognition, 이하 NER)은 자연어처리의 하위 분야로  문자열에서 미리 정의된 개체명 타입에 대해 개체명의 경계를 탐지하고 해당하는 타입으로 분류하는 작업을 의미한다. 주로 상호 참조(coreference resolution), 관계 추출(relation extraction), 사전 추출, 시간 표현 등에서 유용하게 사용된다.
 
 
@@ -11,13 +11,13 @@
 
  개체명 인식을 위한 말뭉치 구축이 어려운 이유는 새로운 개체명이 계속 만들어지고 있어서 완성된 사전을 가지기 어렵기 때문이다. 또한  같은 단어라도 사용되는 상황에 따라 다른 의미로 해석되는 중의성이 발생할 수 있다.                     
 
-## Open domain 또는 Closed domain
+## :octocat: Open domain 또는 Closed domain
 도메인을 구분하는 이유 역시 쉽게 중의성을 해소하기 위해서다.  가령, '여자 친구'의 '여름여름해'라는 곡이 있다면 사전적 의미로는 올바른 정보를 추출하기 어려울 수도 있다. 이를 대중가요라는 Closed domain에 가수와 곡명으로 분류하여 개체로 태깅해 주면 빠르게 정보에 접근할 수 있을 것이다.   
 
 또한 병원 차트, 법원 녹취록 등은 특정한 목적을 위해 데이터를 별도로 구축하기 때문에 댜수의 전문 용어들이 특정한 의미로 쓰이게 된다. 아스피린과 같이 일반적으로 많이 쓰이는 용어도 있지만 대체로는 특정한 용어들을 개체로 태깅해 주는 것이 데이터 구축시 주요 작업일 것이다. 이 때 결과물은 개체명와 범주로 이루어진 사전 또는 태깅된 문서가 된다.   
 
 
-### 도메인 특정적이지 않은 개체명 데이터는 구축과 인식에 모두 품이 많이 든다. 하지만 잘 구축된 데이터는 주요한 정보를 잘 나타내 주어 큰 사용 가치를 지닌다.     
+### :octocat: 도메인 특정적이지 않은 개체명 데이터는 구축과 인식에 모두 품이 많이 든다. 하지만 잘 구축된 데이터는 주요한 정보를 잘 나타내 주어 큰 사용 가치를 지닌다.     
 
 다음 링크의 영화평에서 개체명을 추출하여 구름 그림으로 시각화해 보면 간단한 시각화를 통해서도 정보 차이가 크다는 것을 직관적으로 알 수 있다.          
 
@@ -26,9 +26,9 @@ https://movie.naver.com/movie/bi/mi/reviewread.nhn?code=161967&nid=4704433
 ![ner_cloud](./ner.png)
 
 
-## 역사
+## :octocat: 역사
 1. 1995년 MUC-6[the Sixth Message Understanding Conference]
-(https://cs.nyu.edu/faculty/grishman/muc6.html) 에서 시작되었는데 당시 분류의 기준은 5 가지로  인명(PS), 기관명(OG), 장소(LC), 날짜(DT), 시간(TI) 분류 및 BIO(Begin, in, out) tag 를 붙이는 과제였다.     [:octocat:](https://cs.nyu.edu/faculty/grishman/NEtask20.book_7.html#HEADING18)
+(https://cs.nyu.edu/faculty/grishman/muc6.html) 에서 시작되었는데 당시 분류의 기준은 5 가지로  인명(PS), 기관명(OG), 장소(LC), 날짜(DT), 시간(TI) 분류 및 BIO(Begin, in, out) tag 를 붙이는 과제였다.     [NEtask20](https://cs.nyu.edu/faculty/grishman/NEtask20.book_7.html#HEADING18)에서 참조할 수 있다.      
 
                   
 
@@ -57,7 +57,7 @@ https://movie.naver.com/movie/bi/mi/reviewread.nhn?code=161967&nid=4704433
 
          
 
-## 영어 NER 시스템 성능 
+## :octocat: 영어 NER 시스템 성능 
 영어를 위한 최신 NER 시스템은 인간에 근접한 성능을 낸다. 이를테면 MUC-7에 진입한 최고의 시스템은 F-measure 기준 93.39%을 받았으며 인간 주석자는 97.60%과 96.95%점을 받았다(https://ko.wikipedia.org/wiki/%EA%B0%9C%EC%B2%B4%EB%AA%85_%EC%9D%B8%EC%8B%9D)
 
 - 5개 영역에 대한 개체명 분석이고 원시 코퍼스 distribution 역시 일정했을 것이다.
@@ -65,7 +65,7 @@ https://movie.naver.com/movie/bi/mi/reviewread.nhn?code=161967&nid=4704433
 참고논문 [Adaptive Name Entity Recognition under Highly Unbalanced Data](https://arxiv.org/abs/2003.10296)
 
 
-## 국어 개체명 경진 대회
+## :octocat: 국어 개체명 경진 대회
 
 1. 국내에서는 2016년과 2017년 [국어정보처리 시스템 경진대회](https://ithub.korean.go.kr/user/contest/contestIntroView.do) 에서도 개체명 인식이 지정 분야였다. 
 
@@ -76,7 +76,7 @@ https://movie.naver.com/movie/bi/mi/reviewread.nhn?code=161967&nid=4704433
 
 
 
-## 공개된 국어 개체명 말뭉치 데이터[:octocat:]  
+## :octocat: 공개된 국어 개체명 말뭉치 데이터  
    
 1. HLCT 2016에서 제공한 데이터 세트 원본의 일부 오류를 수정하고 공개한 말뭉치                    
 
@@ -98,37 +98,37 @@ https://movie.naver.com/movie/bi/mi/reviewread.nhn?code=161967&nid=4704433
 ![aihub](./aihub.png) 
 
 
- ## 한국어 개체명 말뭉치의 방향
+ ##:octocat:  한국어 개체명 말뭉치의 방향
 포멧이 사용하기 편하고 사용 예시가 분명한 단계로 진행되고 있다.
 개체명 태그의 종류가 다양해지고 다양한 도메인에서도 유연하게 작용할 수 있는 방향을 모색해 가고 있다.
 
 
- ## 주 응용 분야
+ ## :octocat: 주 응용 분야
  question answering, information retrieval, relation extraction
 
 
  ![bot](./chat.png)
 
 
- ## 참고        
-            
- ### 문헌         
+ ## :octocat: 참고 문헌   
+ 
+1. Dan Jurafsky, [Speech and Language Processing (3rd ed. draft)](https://web.stanford.edu/~jurafsky/slp3/)           
 
-[D. Nadeau and S. Sekine, “A survey of named entity recognition and classiﬁcation,” Lingvist. Investig., vol. 30, no. 1, pp. 3–26, 2007.](https://nlp.cs.nyu.edu/sekine/papers/li07.pdf)
-
-
-Z. Zhang, X. Han, Z. Liu, X. Jiang, M. Sun, and Q. Liu, “ERNIE: enhanced language representation with informative entities,” in ACL, 2019, pp. 1441–1451.    
+2. [D. Nadeau and S. Sekine, “A survey of named entity recognition and classiﬁcation,” Lingvist. Investig., vol. 30, no. 1, pp. 3–26, 2007.](https://nlp.cs.nyu.edu/sekine/papers/li07.pdf)      
 
 
-[Vikas Yadav, Steven Bethard, A Survey on Recent Advances in Named Entity Recognition from Deep Learning models, Submitted on 25 Oct 2019](https://arxiv.org/abs/1910.11470)
+3. Z. Zhang, X. Han, Z. Liu, X. Jiang, M. Sun, and Q. Liu, “ERNIE: enhanced language representation with informative entities,” in ACL, 2019, pp. 1441–1451.         
 
-###Github          
-https://github.com/songys/nlp_tasks
+
+4. [Vikas Yadav, Steven Bethard, A Survey on Recent Advances in Named Entity Recognition from Deep Learning models, Submitted on 25 Oct 2019](https://arxiv.org/abs/1910.11470)   
+
+###Github             
+https://github.com/songys/nlp_tasks       
 
  
  ===================================================================
  
- # 이 [Github](https://github.com/songys/entity/tree/master/data)에서의 NER 데이터 구축 과정  
+ # 이 [Github](https://github.com/songys/entity/tree/master/data)에서의 NER 데이터 구축 과정    
 
  1. 한글형태소 사전 NIADic에 사람과 장소 등의 정보를 참조했음      
 https://kbig.kr/portal/kbig/knowledge/files/bigdata_report.page?bltnNo=10000000016451
