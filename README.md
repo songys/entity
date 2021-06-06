@@ -107,8 +107,7 @@ https://movie.naver.com/movie/bi/mi/reviewread.nhn?code=161967&nid=4704433
 
 
 
- ## :octocat: 주 응용 분야
- question answering, information retrieval, relation extraction
+ ## :octocat: 응용 분야 이미지
 
 
  ![bot](./chat.png)
