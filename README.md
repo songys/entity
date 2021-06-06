@@ -72,7 +72,7 @@ https://movie.naver.com/movie/bi/mi/reviewread.nhn?code=161967&nid=4704433
     
 2. [Naver NLP Challenge](http://air.changwon.ac.kr/?page_id=10) 2018에서도 개채명 인식이 주요 과제중 하나였고 1위를 한 State_Of_The_Art팀은 F1 score가	90.4219로 성능 개선을 보였다.
 
-3. 2021년 6월 한국어 이해를 위한 벤치마크 세트로 만들어진 KLUE 데이터는 KLUE-RoBERTa의 base 모델에서 Macro F1이 85.13였다.
+3. 2021년 6월 한국어 이해를 위한 벤치마크 세트로 만들어진 KLUE 데이터는 KLUE-RoBERTa의 base 모델에서 Macro F1이 85.13이다. 
 
 
 
