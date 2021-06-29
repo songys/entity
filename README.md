@@ -96,7 +96,7 @@ https://movie.naver.com/movie/bi/mi/reviewread.nhn?code=161967&nid=4704433
 
 2. 한국어 개체명 정의 및 표지 표준화 기술보고서와 이를 기반으로 제작된 개체명 형태소 말뭉치
 
-[mounlp_NER](https://github.com/mounlp/NER)
+[mounlp_NER](https://github.com/kmounlp/NER)
 
 ****`Quick peek`**** 
  
