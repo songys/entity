@@ -3,7 +3,7 @@
 -----------------------------------------------------------------------------------
 
 ## 명명
-(한) 개체명 인식, (영) named entitiy recognition, (일) 固有表現抽出 (중) 命名实体识别
+(한) 개체명 인식, (영) named entitiy recognition,(일) 固有表現抽出 (중) 命名实体识别
  
 
 ## :octocat: 개체명 인식과 개체명 말뭉치 구축
@@ -127,7 +127,19 @@ https://movie.naver.com/movie/bi/mi/reviewread.nhn?code=161967&nid=4704433
 3. Z. Zhang, X. Han, Z. Liu, X. Jiang, M. Sun, and Q. Liu, “ERNIE: enhanced language representation with informative entities,” in ACL, 2019, pp. 1441–1451.         
 
 
-4. [Vikas Yadav, Steven Bethard, A Survey on Recent Advances in Named Entity Recognition from Deep Learning models, Submitted on 25 Oct 2019](https://arxiv.org/abs/1910.11470)   
+4. [Vikas Yadav, Steven Bethard, A Survey on Recent Advances in Named Entity Recognition from Deep Learning models, Submitted on 25 Oct 2019](https://arxiv.org/abs/1910.11470)     
+
+
+
+5. [박혜웅 송영숙(2017),음절 기반의 CNN를 이용한 개체명 인식, 한국정보과학회 발표 논문집](http://hclt.kr/symp/?lnb=conference),  pp.330-332.          
+
+
+7.  유형조, 송영숙, 김민수, 윤기현, 정유남, 저서 설명딥러닝 기반 한국어 개체명 인식의 평가와 오류 분석 연구, Korean Journal of Linguistics, 46-3, 803-828.      
+논문·저서
+
+7. 김성현, 송영숙, 송치성, 한지윤, 한국어 개체명 인식에서 의미 모호성 연구(2021), 한글 및 한국어정보처리 학술대회(HCLT) 발표 논문집, 2021 한글 및 한국어정보처리 학술대회(HCLT)
+
+
 
 ###Github             
 https://github.com/songys/nlp_tasks       
@@ -145,9 +157,7 @@ https://kbig.kr/portal/kbig/knowledge/files/bigdata_report.page?bltnNo=100000000
 3. 1과 2를 수작업으로 검수하여 최종 사전 구축         
 
 DT 272개, LG 29799개, PS 11354개, TI 48개 
-
-4. 관련논문                    
-[박혜웅 송영숙(2017),음절 기반의 CNN를 이용한 개체명 인식, 한국정보과학회 발표 논문집](http://hclt.kr/symp/?lnb=conference),  pp.330-332.            
+              
 
 # :octocat: 저작권 표기       
 
