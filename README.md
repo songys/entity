@@ -131,15 +131,17 @@ https://movie.naver.com/movie/bi/mi/reviewread.nhn?code=161967&nid=4704433
 
 
 
-5. [박혜웅 송영숙(2017),음절 기반의 CNN를 이용한 개체명 인식, 한국정보과학회 발표 논문집](http://hclt.kr/symp/?lnb=conference),  pp.330-332.          
+5. [박혜웅 송영숙. (2017),음절 기반의 CNN를 이용한 개체명 인식, 한국정보과학회 발표 논문집,  pp.330-332.](http://hclt.kr/symp/?lnb=conference)          
 
+    
+7.  [유현조, 송영숙, 김민수, 윤기현, 정유남. (2021), 딥러닝 기반 한국어 개체명 인식의 평가와 오류 분석 연구, Korean Journal of Linguistics, 46-3, 803-828.](https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002760413)    
+          
 
-7.  유형조, 송영숙, 김민수, 윤기현, 정유남, 저서 설명딥러닝 기반 한국어 개체명 인식의 평가와 오류 분석 연구, Korean Journal of Linguistics, 46-3, 803-828.      
+7. [김성현, 송영숙, 송치성, 한지윤. (2021), 한국어 개체명 인식에서 의미 모호성 연구, 한글 및 한국어정보처리 학술대회(HCLT) 발표 논문집, 2021 한글 및 한국어정보처리 학술대회(HCLT)](https://koreascience.kr/article/CFKO202130060636817.pdf)   
 
-7. 김성현, 송영숙, 송치성, 한지윤, 한국어 개체명 인식에서 의미 모호성 연구(2021), 한글 및 한국어정보처리 학술대회(HCLT) 발표 논문집, 2021 한글 및 한국어정보처리 학술대회(HCLT)   
+8. [송영숙, 유현조 and 정유남. (2022). 한국어 중첩 개체명 분석을 위한 연구. 한국어 의미학, 76, 66-101.](https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002853584)        
 
-
-
+                
 ###Github             
 https://github.com/songys/nlp_tasks       
 
